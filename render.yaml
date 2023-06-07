@@ -38,6 +38,7 @@ services:
         value: true
       - key: LICENSE_KEY
         value: EXPIRED-LICENSE-KEY-TRIAL
+        sync: false
 
 databases:
   - name: retool_postgres
