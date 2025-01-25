@@ -39,7 +39,9 @@ services:
       - key: LICENSE_KEY
         value: EXPIRED-LICENSE-KEY-TRIAL
         sync: false
-
+      # retool logs ... a LOT ... at info-level.
+      - key: LOG_LEVEL
+        value: warn
 databases:
   - name: retool_postgres
     databaseName: retooldb
